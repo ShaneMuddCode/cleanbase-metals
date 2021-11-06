@@ -6,12 +6,16 @@ const NavbarTop = () => {
     <div className='navbar'>
       <div className='container flex'>
         <h1 className='logo'>
-          <Link to='/'>CleanBase</Link>
+          <Link style={{ textDecoration: 'none' }} to='/'>
+            CleanBase
+          </Link>
         </h1>
         <nav>
           <ul>
             <li>
-              <Link to='/'>Home</Link>
+              <Link style={{ textDecoration: 'none' }} to='/'>
+                Home
+              </Link>
             </li>
             <li>
               <Link to='/focus'>Focus</Link>
