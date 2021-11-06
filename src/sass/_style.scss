@@ -404,18 +404,9 @@ All Pages -- Footer
   }
 }
 
-/* Tablets and under */
-@media (max-width: 768px) {
-  .grid,
-  .indexMainGrid .grid,
-  .stats .grid,
-  .mine-photo-row .grid,
-  .cloud .grid,
-  .focus-head .grid,
-  .focus-sub-main .grid,
-  /* .about-main .grid, */
-  .about-sub-head .grid
-  /* .about-main .grid, */ {
+/* Ipad 768 Tablets and under - about-head */
+@media (max-width: 810px) {
+  .about-head .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -446,6 +437,25 @@ All Pages -- Footer
     grid-row: 1;
   }
 
+  .about-head {
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .indexMainGrid .grid,
+  .stats .grid,
+  .mine-photo-row .grid,
+  .cloud .grid,
+  .focus-head .grid,
+  .focus-sub-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
   .indexMainGrid {
     height: auto;
     padding-bottom: 30px;
@@ -467,8 +477,7 @@ All Pages -- Footer
     grid-row: 1;
   }
 
-  .focus-head,
-  .about-head {
+  .focus-head {
     text-align: center;
     padding-right: 0px;
   }
