@@ -1,0 +1,1 @@
+CleanBase is a demo website exploring JavaScript data tools and responsive HTML/CSS with energy metals as a theme. Site by Shane Mudd, a developer in the Washington, DC area. Design elements adapted from Traversy Media.
