@@ -62,7 +62,8 @@ const AboutScreen = () => {
 
       <div style={backgroundDivStyle}></div>
 
-      <Footer></Footer>
+      <Footer />
+      <div className='post-footer-fill' />
     </>
   )
 }

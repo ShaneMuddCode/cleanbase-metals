@@ -177,6 +177,10 @@ Index Page -- mine-photo-row
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 /* -------------------------

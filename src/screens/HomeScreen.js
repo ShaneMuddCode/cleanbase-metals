@@ -60,7 +60,7 @@ const HomeScreen = () => {
             Terawatt-hours (TWh) by 2030. BloombergNEF estimates for battery
             driven demand increase between 2021 and 2030:
           </h3>
-          <div className='grid grid-3 text-center my-3'>
+          <div className='grid grid-3 text-center my-2'>
             <div>
               <i className='fas fa-bolt fa-3x'></i>
               <h3>5.3x</h3>
