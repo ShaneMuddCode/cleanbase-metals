@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NavbarTop from '../components/NavbarTop'
 import Footer from '../components/Footer'
 import NickelChart from '../charts/NickelChart'
 import LithiumChart from '../charts/LithiumChart'
@@ -12,7 +11,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <NavbarTop></NavbarTop>
+      {/* <NavbarTop></NavbarTop> */}
 
       {/* <!-- Section indexMainGrid--> */}
       <section className='indexMainGrid'>

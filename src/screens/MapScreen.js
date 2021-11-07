@@ -1,5 +1,4 @@
 import React from 'react'
-// import '../index.scss'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,14 +7,13 @@ import {
   faBolt,
   faBatteryThreeQuarters,
 } from '@fortawesome/free-solid-svg-icons'
-import NavbarTop from '../components/NavbarTop'
 import Footer from '../components/Footer'
 import SupplyChainMap from '../components/SupplyChainMap'
 
 const MapScreen = () => {
   return (
     <>
-      <NavbarTop />
+      {/* <NavbarTop /> */}
 
       {/* <!-- Head --> */}
       <section className='focus-head bg-primary py-1'>

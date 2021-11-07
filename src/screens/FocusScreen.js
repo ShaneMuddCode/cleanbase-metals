@@ -2,14 +2,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 import { faWind, faPlug, faBolt } from '@fortawesome/free-solid-svg-icons'
-import NavbarTop from '../components/NavbarTop'
+// import NavbarTop from '../components/NavbarTop'
 import Footer from '../components/Footer'
 import WindTurbineChart from '../charts/WindTurbineChart'
 
 const FocusScreen = () => {
   return (
     <>
-      <NavbarTop></NavbarTop>
       {/* <!-- Section indexMainGrid--> */}
       <section className='focus-head bg-primary py-1'>
         <div className='container grid'>

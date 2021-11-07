@@ -1,5 +1,4 @@
 import React from 'react'
-import NavbarTop from '../components/NavbarTop'
 import Footer from '../components/Footer'
 import graphBackground from '../img/graphbackground.JPG'
 
@@ -12,7 +11,7 @@ const AboutScreen = () => {
 
   return (
     <>
-      <NavbarTop></NavbarTop>
+      {/* <NavbarTop></NavbarTop> */}
       {/* <!-- About Head --> */}
       <section className='about-head bg-primary'>
         <div className='container grid'>
