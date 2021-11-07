@@ -1,10 +1,8 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import graphBackground from '../img/graphbackground.JPG'
 
 const AboutScreen = () => {
   const backgroundDivStyle = {
-    // backgroundImage: `url(${graphBackground})`,
     backgroundColor: '#f0f7ff',
     backgroundSize: 'cover',
     padding: '45px',
