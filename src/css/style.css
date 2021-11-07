@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap"); */
+
+:root {
+  /* --primary-color: #047aed; */
+  --primary-color: #01579b;
+  --secondary-color: #002f6c;
+  --light-color: #4f83cc;
+  --palette-green: #32681d;
+  --palette-lightGreen: 619648;
+  --near-white: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  /* overflow-y: hidden; */
+}
+
+ul {
+  list-style-type: none; /* avoid bullets */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0; /* topBottom leftRight */
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* -------------------------
+Navbar 
+------------------------- */
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10 px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 3px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* -------------------------
+Index Page 
+------------------------- */
+
+/* -------------------------
+Index Page -- indexMainGrid
+------------------------- */
+
+.indexMainGrid {
+  /* height: 740px; */
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative; /* if we want absolute within, we can */
+  padding-bottom: 30px;
+}
+
+.indexMainGrid h1 {
+  font-size: 40px;
+}
+
+.indexMainGrid p {
+  margin: 20px 0;
+}
+
+.indexMainGrid .card p {
+  margin: 0 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: smaller;
+}
+
+.indexMainGrid .grid {
+  overflow: visible;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+/* -------------------------
+Index Page Chart --- TODO Used?
+------------------------- */
+.chart-text {
+  font-family: Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+/* -------------------------
+Index Page -- Stats
+------------------------- */
+
+.stats {
+  padding-top: 30px;
+  background-color: var(--near-white);
+}
+
+.stats-heading {
+  /* max-width: 400px; */
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* -------------------------
+Index Page -- mine-photo-row
+------------------------- */
+
+.mine-photo-row {
+  padding-bottom: 30px;
+  background-color: var(--near-white);
+}
+
+.mine-photo-row .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mine-photo-row .grid > *:first-child {
+  grid-column: 1 / span 2;
+  /* grid-row: 1 / span 2; */
+}
+
+#lithiumMine_pic {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+/* -------------------------
+Focus Page 
+------------------------- */
+
+/* -------------------------
+Focus Page -- focus-head
+------------------------- */
+
+.focus-head {
+  justify-self: center;
+  padding-right: 30px;
+}
+
+.focus-head .topRightIcon {
+  justify-self: center;
+  padding-right: 30px;
+}
+
+/* -------------------------
+Focus Page -- focusMainChartDiv
+------------------------- */
+
+.focusMainChartDiv {
+  /* height: 740px; */
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative; /* if we want absolute within, we can */
+  padding-bottom: 30px;
+}
+
+.focusMainChartDiv .grid {
+  overflow: visible;
+  /* grid-template-columns: 50% 50%; */
+  gap: 30px;
+}
+
+.focusMainChartDiv h1 {
+  font-size: 40px;
+}
+
+.focusMainChartDiv p {
+  margin: 20px 0;
+}
+
+.focusMainChartDiv .card p {
+  /* margin: 0px 0; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: smaller;
+}
+
+/* #copper {
+  width: auto;
+  height: 400px;
+} */
+
+/* -------------------------
+Focus Page -- focus-sub-main Grid 
+------------------------- */
+
+.focus-sub-main {
+  background-color: var(--near-white);
+  padding: 15px 0;
+}
+
+.focus-sub-main .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px 0px;
+}
+
+.focus-sub-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
+
+.focus-sub-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.focus-sub-main .card > i {
+  margin-right: 20px;
+}
+
+.focus-sub-main .grid {
+  padding: 15px 50px;
+}
+
+.focus-sub-main .quote {
+  font-size: 1.3rem;
+}
+
+.focus-sub-main .source {
+  font-size: 0.9rem;
+}
+
+/* -------------------------
+Map Page -- mapMainChartDiv
+------------------------- */
+
+.mapMainChartDiv {
+  /* height: 740px; */
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative; /* if we want absolute within, we can */
+  padding-bottom: 30px;
+}
+
+/* .mapMainChartDiv .grid {
+  overflow: visible;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+} */
+
+.mapMainChartDiv h1 {
+  font-size: 40px;
+}
+
+.mapMainChartDiv p {
+  margin: 20px 0;
+}
+
+.mapMainChartDiv .card p {
+  /* margin: 0px 0; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: smaller;
+}
+
+.map-container {
+  height: 450px;
+  border-radius: 5px;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.8);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+  width: max-content;
+}
+
+/* -------------------------
+About Page
+------------------------- */
+
+/* -------------------------
+About Page -- about-head row
+------------------------- */
+
+.about-head {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative; /* if we want absolute within, we can */
+  margin-top: 0;
+}
+
+.about-head .container {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.about-head h1 {
+  font-size: 40px;
+}
+
+.about-head h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.about-head .grid {
+  overflow: visible;
+  grid-template-columns: 50% 50%;
+  /* gap: 10px; */
+}
+
+.about-head .card {
+  /* position: relative; */
+  /* top: 10px; */
+  /* height: 400px; */
+  width: 450px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 100;
+  justify-self: flex-start;
+  margin: 20px 0px 20px 0px;
+  color: rgb(109, 109, 109);
+}
+
+.about-head li {
+  margin-top: 8px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.about-head .final {
+  border-bottom: 0;
+}
+
+.about-head > *:first-child {
+  justify-self: flex-start;
+}
+
+.about-head .about-para {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* -------------------------
+All Pages -- Footer
+------------------------- */
+
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* -------------------------
+@Responsive @media
+------------------------- */
+
+@media (min-height: 750px) {
+  .post-footer-fill {
+    background-color: var(--primary-color);
+    height: 300px;
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .indexMainGrid .grid,
+  .stats .grid,
+  .mine-photo-row .grid,
+  .cloud .grid,
+  .focus-head .grid,
+  .focus-sub-main .grid,
+  /* .about-main .grid, */
+  .about-sub-head .grid
+  /* .about-main .grid, */ {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-head {
+    height: 625px;
+  }
+
+  .about-head .about-para {
+    margin-top: 20px;
+  }
+
+  .about-head .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  /* first child is card */
+  .about-head .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    width: auto;
+  }
+
+  .about-head .grid > :nth-child(2) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .indexMainGrid {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .indexMainGrid-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .indexMainGrid-form {
+    justify-self: center;
+    margin: auto;
+    /* animation: slideInFromBottom 1s ease-in; */
+  }
+
+  .mine-photo-row .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .focus-head,
+  .about-head {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .focus-head i {
+    padding-right: 0px;
+  }
+
+  .focus-head img {
+    justify-self: center;
+  }
+
+  .focus-sub-main .grid > *:first-child {
+    grid-row: 1;
+  }
+
+  .focus-sub-main .grid > *:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .focus-sub-main .grid > *:nth-child(3) {
+    grid-row: 3;
+  }
+
+  /* #copper {
+    width: auto;
+    height: 150px;
+  } */
+
+  .focus-head .topRightIcon {
+    justify-self: center;
+    padding-right: 0px;
+  }
+
+  .footer .container {
+    justify-items: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .grid {
+    padding: 5%;
+  }
+
+  .indexMainGrid .card {
+    padding: 5px;
+    margin: 0;
+    width: 90vw;
+  }
+
+  .focusMainChartDiv .container {
+    padding: 5%;
+  }
+
+  .focusMainChartDiv .chart-text {
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .focus-sub-main .card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .focus-sub-main .container {
+    padding: 5%;
+  }
+
+  .focus-sub-main .quote {
+    display: flex;
+  }
+
+  .focus-sub-main i {
+    margin-top: 40px;
+  }
+
+  .mapMainChartDiv .container {
+    width: 100vw;
+  }
+
+  .mapMainChartDiv .card {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .about-head {
+    height: auto;
+  }
+
+  .about-head .card {
+    /* font-size: small; */
+    text-align: left;
+    width: 100%;
+  }
+
+  .about-head .card h2 {
+    font-size: 25px;
+  }
+}
+
+/* Change the indexMainGrid-form width to 300px in the mobile media query(500px) to get it to look right on really small screens. */
