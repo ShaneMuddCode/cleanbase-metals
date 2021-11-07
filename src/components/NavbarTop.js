@@ -1,30 +1,39 @@
+// import { faBorderNone } from '@fortawesome/free-solid-svg-icons' TODO review/remove
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const NavbarTop = () => {
   return (
     <div className='navbar'>
       <div className='container flex'>
         <h1 className='logo'>
-          <Link style={{ textDecoration: 'none' }} to='/'>
+          <NavLink
+            activeStyle={{ textDecoration: 'none' }}
+            activeClassName='active'
+            to='/'
+          >
             CleanBase
-          </Link>
+          </NavLink>
         </h1>
         <nav>
           <ul>
             <li>
-              <Link style={{ textDecoration: 'none' }} to='/'>
+              <NavLink
+                activeStyle={{ textDecoration: 'none' }}
+                activeClassName='active'
+                to='/'
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to='/focus'>Focus</Link>
+              <NavLink to='/focus'>Focus</NavLink>
             </li>
             <li>
-              <Link to='/map'>Map</Link>
+              <NavLink to='/map'>Map</NavLink>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <NavLink to='/about'>About</NavLink>
             </li>
           </ul>
         </nav>
