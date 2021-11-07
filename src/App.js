@@ -11,10 +11,10 @@ function App() {
     <Router>
       <ScrollToTop />
       <Switch>
-        <Route path='/focus' exact component={FocusScreen} />
-        <Route path='/about' exact component={AboutScreen} />
-        <Route path='/map' exact component={MapScreen} />
-        <Route path='/' component={HomeScreen} />
+        <Route path='/' exact component={HomeScreen} />
+        <Route path='/focus' component={FocusScreen} />
+        <Route path='/about' component={AboutScreen} />
+        <Route path='/map' component={MapScreen} />
       </Switch>
     </Router>
   )
