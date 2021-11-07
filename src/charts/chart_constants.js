@@ -31,4 +31,4 @@ export const standardChartConfig = {
 
 export const smallCardStyle = { width: '100%', height: '250px' }
 
-export const largeCardStyle = { width: '100%' }
+export const largeCardStyle = { width: '100%', height: '400px' }

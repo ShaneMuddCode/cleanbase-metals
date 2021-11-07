@@ -4,7 +4,8 @@ import graphBackground from '../img/graphbackground.JPG'
 
 const AboutScreen = () => {
   const backgroundDivStyle = {
-    backgroundImage: `url(${graphBackground})`,
+    // backgroundImage: `url(${graphBackground})`,
+    backgroundColor: '#d0e0f6',
     backgroundSize: 'cover',
     padding: '45px',
   }

@@ -2,7 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 import { faWind, faPlug, faBolt } from '@fortawesome/free-solid-svg-icons'
-// import NavbarTop from '../components/NavbarTop'
 import Footer from '../components/Footer'
 import WindTurbineChart from '../charts/WindTurbineChart'
 
@@ -33,7 +32,7 @@ const FocusScreen = () => {
         <div className='container'>
           <div className='card chart-text'>
             {/* <div id='copper'></div> */}
-            <WindTurbineChart id={'copper'} />
+            <WindTurbineChart />
             <p>
               Source: USGS Wind Energy in the United States and Materials
               Required for the Land-Based Wind Turbine Industry From 2010
