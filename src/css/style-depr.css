@@ -234,10 +234,10 @@ Focus Page -- focusMainChartDiv
   font-size: smaller;
 }
 
-#copper {
+/* #copper {
   width: auto;
   height: 400px;
-}
+} */
 
 /* -------------------------
 Focus Page -- focus-sub-main Grid 
@@ -506,10 +506,10 @@ All Pages -- Footer
     grid-row: 3;
   }
 
-  #copper {
+  /* #copper {
     width: auto;
     height: 150px;
-  }
+  } */
 
   .focus-head .topRightIcon {
     justify-self: center;
